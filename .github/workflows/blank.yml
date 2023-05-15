@@ -13,11 +13,11 @@ jobs:
     steps:
       - name: Run a multi-line script
         run: |
-          echo running ls
-          ls
+          echo running ls -a
+          ls -a
           cd ..
-          echo running ls
-          ls
+          echo running ls -a
+          ls -a
           echo running pwd
           pwd
           echo hello sh
