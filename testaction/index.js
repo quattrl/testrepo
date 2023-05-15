@@ -1,2 +1,4 @@
+const fs = require('fs');
 
-console.log("hello")
+const data = fs.readFileSync("README.md")
+console.log("data:", data)
