@@ -15,6 +15,9 @@ jobs:
         run: |
           echo running ls
           ls
+          cd ..
+          echo running ls
+          ls
           echo running pwd
           pwd
           echo hello sh
