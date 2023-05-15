@@ -13,5 +13,9 @@ jobs:
     steps:
       - name: Run a multi-line script
         run: |
+          echo running ls
+          ls
+          echo running pwd
+          pwd
           echo hello sh
           node index.js
