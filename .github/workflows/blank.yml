@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: Run a multi-line script
         run: |
-          echo "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs/${{ github.job_id }}"
+          echo "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs/${{ github.job }}"
