@@ -1,6 +1,6 @@
 name: testaction
 on:
-  commit:
+  push:
 
 jobs:
   testaction:
