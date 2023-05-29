@@ -1,24 +1,12 @@
 name: testaction
 on:
-  pull_request:
-    types:
-      - closed
-  workflow_dispatch:
+  commit:
 
 jobs:
-  github-to-hsdes-comment:
-    name: Comment on case when PR merges
-    if: github.event.pull_request.merged == true
+  testaction:
+    name: testaction
     runs-on: ubuntu-latest
     steps:
       - name: Run a multi-line script
         run: |
-          echo running ls -a
-          ls -a
-          cd ..
-          echo running ls -a
-          ls -a
-          echo running pwd
-          pwd
-          echo hello sh
-          node index.js
+          echo "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
